@@ -98,7 +98,7 @@ public final class BluemapClaims extends JavaPlugin {
                                     .addPoint(new Vector2d(claim.getGreaterBoundaryCorner().getX() + 1, claim.getGreaterBoundaryCorner().getZ() + 1))
                                     .addPoint(new Vector2d(claim.getGreaterBoundaryCorner().getX() + 1, claim.getLesserBoundaryCorner().getZ()))
                                     .build(), (float) lowestY, (float) highestY)
-                            .label(claim.getOwnerName() + "'s claim")
+                            .label(claim.getOwnerName() + "'님의 부동산이에요")
                             .build();
 
 
@@ -107,7 +107,7 @@ public final class BluemapClaims extends JavaPlugin {
             }
 
             for (BlueMapMap map : maps) {
-                map.getMarkerSets().put("claims", claimsMarkerSet);
+                map.getMarkerSets().put("부동산", claimsMarkerSet);
             }
 
         }
