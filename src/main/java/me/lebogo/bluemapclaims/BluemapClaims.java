@@ -77,7 +77,7 @@ public final class BluemapClaims extends JavaPlugin {
             Collection<BlueMapMap> maps = blueMapWorld.getMaps();
 
             MarkerSet claimsMarkerSet = MarkerSet.builder()
-                    .label("Claims")
+                    .label("부동산")
                     .build();
 
             if(claimsByWorld.get(worldName) != null) {
@@ -98,7 +98,7 @@ public final class BluemapClaims extends JavaPlugin {
                                     .addPoint(new Vector2d(claim.getGreaterBoundaryCorner().getX() + 1, claim.getGreaterBoundaryCorner().getZ() + 1))
                                     .addPoint(new Vector2d(claim.getGreaterBoundaryCorner().getX() + 1, claim.getLesserBoundaryCorner().getZ()))
                                     .build(), (float) lowestY, (float) highestY)
-                            .label(claim.getOwnerName() + "'님의 부동산이에요")
+                            .label(claim.getOwnerName() + "님의 부동산이에요")
                             .build();
 
 
